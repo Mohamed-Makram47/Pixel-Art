@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000000; 
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.slider input {
+    appearance: none;
+    width: 100%;
+    background: linear-gradient(to right, #ffffff, #858585); 
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000000; 
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+
+.box {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.pixel {
+    border: 1px solid #bfbfbf; 
+    background-color: white;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #232325;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btns button {
+    padding: 10px 15px;
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.btns button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.colorPicker {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid white; 
+    outline: none; 
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: #000000; 
+    appearance: none; 
+}
+
+.colorPicker::-webkit-color-swatch {
+    border: none; 
+}
+
+.colorPicker::-moz-focus-inner {
+    border: 0; 
+}
+
+@media (max-width: 499px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #000000; 
+        padding: 20px;
+        overflow: hidden; 
+    }
+    
+    .all {
+        width: 100%;
+        max-width: 90vw; 
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 100%; 
+        max-width: 90vw;
+    }
+    
+    .slider input {
+        appearance: none;
+        width: 100%;
+        max-width: 300px; 
+        background: linear-gradient(to right, #ffffff, #858585); 
+        height: 10px;
+        border-radius: 5px;
+        outline: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transition: 0.3s ease;
+    }
+    
+    .box {
+        display: grid;
+        width: 80vw; 
+        height: 80vw;
+        max-width: 400px; 
+        max-height: 400px;
+        margin-top: 20px;
+    }
+    
+    .pixel {
+        border: 1px solid #bfbfbf; 
+        background-color: white;
+    }
+    
+    .btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 400px; 
+        margin: 20px auto;
+        background-color: #232325;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .btns button, .colorPicker {
+        padding: 10px 15px;
+        background-color: #ffffff; 
+        border: none;
+        border-radius: 5px;
+        color: #000000;
+        cursor: pointer;
+        transition: 0.3s ease;
+        width: 75px; 
+        margin: 10px;
+        font-size: 12px; 
+    }
+    
+    .btns button:hover {
+        background-color: #000000;
+        color: white;
+    }
+    
+    .colorPicker {
+        width: 35px; 
+        height: 35px;
+        border-radius: 10px;
+        border: 2px solid white;
+        outline: none;
+        cursor: pointer;
+        padding: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        background: #000000;
+        appearance: none;
+    }   
+}
+
